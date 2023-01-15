@@ -3,10 +3,10 @@ import '../Styles/InteractiveRatingComponentStyle.scss';
 
 function InteractiveRatingComponent(props) {
 
+    
+
     return(
         <div className='doop'>
-            Hello World, I am InteractiveRatingComponent.js
-
             {/* <!-- Rating state start --> */}
 
             How did we do?

@@ -23,8 +23,7 @@ function App() {
 
       <div id='page-container'>
         <div id='content-wrap'>
-        <h1 class="sr-only">Interactive Rating Component</h1>
-
+          <h1 class="sr-only">Interactive Rating Component</h1>
 
           <InteractiveRatingComponent/>    
         </div>

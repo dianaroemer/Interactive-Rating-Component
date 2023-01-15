@@ -17,20 +17,23 @@
   position: relative;
   width: 100vw;
   height: 100vh;
+  // max-height: 100%;
   max-width: 100%;
 
-  display: grid;
-  place-content: center;
+  // display: grid;
+  // place-content: center;
 }
 
 #content-wrap {
   // display: grid;
   // place-content: center;
   // height: 100vh;
-  padding-bottom: 1rem;
+  // max-height: 100%;
+  // padding-bottom: 1rem;
 }
 
 .attribution {
+  // padding-top: 1rem;
   position: absolute;
   bottom: 0px;
   width: 100%;
