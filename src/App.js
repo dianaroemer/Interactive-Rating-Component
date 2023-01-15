@@ -1,5 +1,7 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import './Components/InteractiveRatingComponent';
+import InteractiveRatingComponent from './Components/InteractiveRatingComponent';
 
 function App() {
   return (
@@ -18,7 +20,12 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <InteractiveRatingComponent/>    
     </div>
+
+    
+
   );
 }
 
