@@ -48,4 +48,9 @@
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+  transition: .11s;
+}
+
+.attribution a:hover {
+  color: _colors.$Orange;
 }
