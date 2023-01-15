@@ -22,6 +22,7 @@ function App() {
       </header>
 
       <InteractiveRatingComponent/>    
+
     </div>
 
     
