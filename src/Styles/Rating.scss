@@ -1,0 +1,14 @@
+@use '_colors' as _colors;
+
+
+.ratingModal {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    background-color: _colors.$DarkBlue;
+    border-radius: 10px;
+}
+
+.ratingContent {
+    padding: 20px;
+}

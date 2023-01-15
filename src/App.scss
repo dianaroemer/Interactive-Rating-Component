@@ -1,6 +1,12 @@
+@use 'Styles/_colors' as _colors;
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
 .App {
   text-align: center;
   height: 100%;
+  font-size: 15px;
+  font-family: 'Overpass', sans-serif;
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -20,26 +26,24 @@
   // max-height: 100%;
   max-width: 100%;
 
+  background-color: _colors.$VeryDarkBlue;
+
   // display: grid;
   // place-content: center;
 }
 
-#content-wrap {
-  // display: grid;
-  // place-content: center;
-  // height: 100vh;
-  // max-height: 100%;
+// #content-wrap {
   // padding-bottom: 1rem;
-}
+// }
 
 .attribution {
-  // padding-top: 1rem;
   position: absolute;
   bottom: 0px;
   width: 100%;
   height: 1rem;
   font-size: 11px;
   text-align: center;
+  color: _colors.$MediumGrey 
 }
 
 .attribution a {

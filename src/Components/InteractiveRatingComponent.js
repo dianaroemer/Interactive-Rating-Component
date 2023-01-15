@@ -6,8 +6,16 @@ import Thanked from './Thanked';
 
 function InteractiveRatingComponent(props) {
 
-    const [isThanked, setThanked] = useState(false);
+    const [clickedRating, setClickedRating] = useState(0);
+    function handleSetClickedRating(e, newValue) {
+        e.preventDefault();
+        // console.log(`You cliked a new rating`)
+        // console.log(`You are setting the new rating to: `)
+        // console.log(newValue);
+        setClickedRating(newValue);        
+    }
 
+    const [isThanked, setThanked] = useState(false);
     function toggleSetThanked(e) {
         e.preventDefault();
         console.log(`you're inside toggleSetThanked`)
@@ -22,8 +30,10 @@ function InteractiveRatingComponent(props) {
         <div className='interactiveRatingModal'>
 
             {!isThanked ? 
-                <Rating toggleSetThanked={toggleSetThanked}/> :
+                <Rating toggleSetThanked={toggleSetThanked}
+                    handleSetClickedRating={handleSetClickedRating}/> :
                 <Thanked/>}
+                {clickedRating}
             
         </div>
     );
