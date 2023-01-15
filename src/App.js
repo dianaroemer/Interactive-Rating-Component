@@ -23,11 +23,11 @@ function App() {
 
       <div id='page-container'>
         <div id='content-wrap'>
-          <h1 class="sr-only">Interactive Rating Component</h1>
+          <h1 className="sr-only">Interactive Rating Component</h1>
 
           <InteractiveRatingComponent/>    
         </div>
-        <footer class="attribution">
+        <footer className="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel='noreferrer'>Frontend Mentor</a>. 
           Coded by <a href="https://github.com/dianaroemer">Diana Roemer</a>.
         </footer>

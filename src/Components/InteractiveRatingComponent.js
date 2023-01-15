@@ -1,38 +1,30 @@
 import React, {useState} from 'react';
 import '../Styles/InteractiveRatingComponentStyle.scss';
 
+import Rating from './Rating';
+import Thanked from './Thanked';
+
 function InteractiveRatingComponent(props) {
 
-    
+    const [isThanked, setThanked] = useState(false);
+
+    function toggleSetThanked(e) {
+        e.preventDefault();
+        console.log(`you're inside toggleSetThanked`)
+        if(!isThanked){
+            setThanked(true);
+        } else {
+            console.log(`You've already submitted a response! Reload the webpage to try again!`);
+        }
+    }
 
     return(
-        <div className='doop'>
-            {/* <!-- Rating state start --> */}
+        <div className='interactiveRatingModal'>
 
-            How did we do?
-
-            Please let us know how we did with your support request. All feedback is appreciated 
-            to help us improve our offering!
-
-            1 2 3 4 5
-
-            Submit
-
-            {/* <!-- Rating state end --> */}
-
-            {/* <!-- Thank you state start --> */}
-
-            You selected Add rating here out of 5
-
-            Thank you!
-
-            We appreciate you taking the time to give a rating. If you ever need more support, 
-            don’t hesitate to get in touch!
-
-{/* <!-- Thank you state end --> */}
-
-
-
+            {!isThanked ? 
+                <Rating toggleSetThanked={toggleSetThanked}/> :
+                <Thanked/>}
+            
         </div>
     );
 
