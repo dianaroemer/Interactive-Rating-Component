@@ -1,7 +1,31 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../Styles/Rating.scss';
 
 function Rating(props) {
+
+    // useEffect(() => {
+    //     if(props.clickedRating === 0){
+    //         return;
+    //     }
+    //     console.log(`I am useEffect in Rating, I have updated~`);
+    //     console.log(props.clickedRating);
+    // }, [props.clickedRating])
+
+
+    let valueButtons = [];
+    for(let i = 1; i <= 5; i++){
+        // console.log(typeof(props.clickedRating))
+        let className = (i === parseInt(props.clickedRating) ? 'doop' : 'valueButton');
+        let valueButton = <button className={className}
+                                value={i}
+                                key={i}
+                                onClick={(e) => {
+                                    props.handleSetClickedRating(e, e.target.value)
+                                }}>{i}</button>
+        valueButtons.push(valueButton);
+                                
+    }
+
 
     return(
         <div className='ratingModal'>
@@ -11,15 +35,7 @@ function Rating(props) {
                 Please let us know how we did with your support request. All feedback is appreciated 
                 to help us improve our offering!
 
-                1 2 3 4 5
-
-                <button 
-                    value={1}
-                    onClick={(e) => {
-                        props.handleSetClickedRating(e, e.target.value);
-                    }}>
-                        1
-                </button>
+                {valueButtons}
 
                 <button 
                     onClick={(e) => {
@@ -27,14 +43,6 @@ function Rating(props) {
                         // console.log("you clicked button");
                         console.log('you clicked button');
                         props.toggleSetThanked(e);
-                    }} 
-                    onMouseEnter={(e) => {
-                        e.preventDefault();
-                        console.log(`You're hovering the submit button`);
-                    }}
-                    onMouseLeave={(e) => {
-                        e.preventDefault();
-                        console.log(`You're leaving the submit button`);
                     }}>
                     Submit
                 </button>

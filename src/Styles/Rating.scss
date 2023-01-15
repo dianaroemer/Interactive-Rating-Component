@@ -12,3 +12,17 @@
 .ratingContent {
     padding: 20px;
 }
+
+.valueButton {
+    background-color: _colors.$MediumGrey;
+    transition: .15s;
+}
+
+.valueButtonSelected {
+    background-color: _colors.$LightGrey;
+    transition: .15s;
+}
+
+.valueButton:hover, .valueButtonSelected:hover{
+    background-color: _colors.$Orange;
+}

@@ -31,7 +31,8 @@ function InteractiveRatingComponent(props) {
 
             {!isThanked ? 
                 <Rating toggleSetThanked={toggleSetThanked}
-                    handleSetClickedRating={handleSetClickedRating}/> :
+                    handleSetClickedRating={handleSetClickedRating}
+                    clickedRating={clickedRating}/> :
                 <Thanked/>}
                 {clickedRating}
             
