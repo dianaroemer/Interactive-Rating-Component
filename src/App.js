@@ -5,9 +5,9 @@ import InteractiveRatingComponent from './Components/InteractiveRatingComponent'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <main className="App">
+      {/* <header className="App-header">
+        // {/* <img src={logo} className="App-logo" alt="logo" /> 
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -19,16 +19,23 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
 
-      <InteractiveRatingComponent/>    
+      <div id='page-container'>
+        <div id='content-wrap'>
+        <h1 class="sr-only">Interactive Rating Component</h1>
 
-      <footer class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel='noreferrer'>Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/dianaroemer">Diana Roemer</a>.
-      </footer>
 
-    </div>
+          <InteractiveRatingComponent/>    
+        </div>
+        <footer class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel='noreferrer'>Frontend Mentor</a>. 
+          Coded by <a href="https://github.com/dianaroemer">Diana Roemer</a>.
+        </footer>
+      </div>
+      
+
+    </main>
 
     
 
