@@ -18,11 +18,14 @@
   width: 100vw;
   height: 100vh;
   max-width: 100%;
+
+  display: grid;
+  place-content: center;
 }
 
 #content-wrap {
-  display: grid;
-  place-content: center;
+  // display: grid;
+  // place-content: center;
   // height: 100vh;
   padding-bottom: 1rem;
 }
