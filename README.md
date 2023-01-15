@@ -41,8 +41,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/dianaroemer/Interactive-Rating-Component)
-- Live Site URL: [Add live site URL here](https://dianaroemer.github.io/Interactive-Rating-Component/)
+- [Solution URL: ](https://github.com/dianaroemer/Interactive-Rating-Component)
+- [Live Site URL: ](https://dianaroemer.github.io/Interactive-Rating-Component/)
 
 ## My process
 
@@ -73,7 +73,7 @@ In additional, creating modular class state objects in React has been a challeng
 ```js
     let valueButtons = [];
     for(let i = 1; i <= 5; i++){
-        let className = (i === parseInt(props.clickedRating) ? 'doop' : 'valueButton');
+        let className = (i === parseInt(props.clickedRating) ? 'valueButtonSelected' : 'valueButton');
         let valueButton = <button className={className}
                                 value={i}
                                 key={i}
@@ -89,6 +89,9 @@ In additional, creating modular class state objects in React has been a challeng
 ```
 
 I can see the above becoming a problem at scale - redrawing an array of five buttons is fairly straightforward, but imagine redrawing an entire movie database on Netflix when you want to update a single element's state. In that case, there's something to be said about calculating the optimal Big O across size - is re-rendering five elements over and over faster than rendering each element individually with slightly higher complexity and storage space, but with less calls over the lifetime of the sum of the objects (for example, individually managing button state and only updating singular buttons, as opposed to mapping across a large spread of buttons).
+
+Also, learned that `event.target.value` automatically types as a `string`. While multiple source recommend converting that to a number at function call time by instead running `event.target.valueAsNumber`, I was unable to find success with that method. Instead, simply running a `parseInt(event.target.value)` brought success and appropriately typed my incoming value as an Int, though it may be computationally more expensive than otherwise.
+
 
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.

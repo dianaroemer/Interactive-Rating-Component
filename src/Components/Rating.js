@@ -5,7 +5,7 @@ function Rating(props) {
 
     let valueButtons = [];
     for(let i = 1; i <= 5; i++){
-        let className = (i === parseInt(props.clickedRating) ? 'doop' : 'valueButton');
+        let className = (i === parseInt(props.clickedRating) ? 'valueButtonSelected' : 'valueButton');
         let valueButton = <button className={className}
                                 value={i}
                                 key={i}

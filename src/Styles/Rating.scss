@@ -2,11 +2,14 @@
 
 
 .ratingModal {
-    width: 350px;
+    width: 415px;
+    height: 415px;
     display: flex;
     justify-content: center;
-    background-color: _colors.$DarkBlue;
-    border-radius: 10px;
+    // background-color: _colors.$ModeratelyBlue;
+    background: radial-gradient(circle at top, #252C36 15%, #171E26 70%);
+    border-radius: 30px;
+    box-shadow: 1px 1px #1A1F25;
 }
 
 .ratingContent {
@@ -14,15 +17,15 @@
 }
 
 .valueButton {
-    background-color: _colors.$MediumGrey;
+    background-color: _colors.$DarkBlue;
     transition: .15s;
 }
 
 .valueButtonSelected {
-    background-color: _colors.$LightGrey;
+    background-color: _colors.$MediumGrey;
     transition: .15s;
 }
 
-.valueButton:hover, .valueButtonSelected:hover{
+.valueButton:hover{
     background-color: _colors.$Orange;
 }
