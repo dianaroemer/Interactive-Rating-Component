@@ -1,20 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import '../Styles/Rating.scss';
 
 function Rating(props) {
 
-    // useEffect(() => {
-    //     if(props.clickedRating === 0){
-    //         return;
-    //     }
-    //     console.log(`I am useEffect in Rating, I have updated~`);
-    //     console.log(props.clickedRating);
-    // }, [props.clickedRating])
-
-
     let valueButtons = [];
     for(let i = 1; i <= 5; i++){
-        // console.log(typeof(props.clickedRating))
         let className = (i === parseInt(props.clickedRating) ? 'doop' : 'valueButton');
         let valueButton = <button className={className}
                                 value={i}
@@ -23,7 +13,6 @@ function Rating(props) {
                                     props.handleSetClickedRating(e, e.target.value)
                                 }}>{i}</button>
         valueButtons.push(valueButton);
-                                
     }
 
 
@@ -46,13 +35,8 @@ function Rating(props) {
                     }}>
                     Submit
                 </button>
-
             </div>
-            {/* rating!!!!!!!!!!! */}
-            
-
         </div>
-
     )
 }
 

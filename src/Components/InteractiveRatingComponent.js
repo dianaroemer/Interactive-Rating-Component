@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import '../Styles/InteractiveRatingComponentStyle.scss';
-
 import Rating from './Rating';
 import Thanked from './Thanked';
 
@@ -19,7 +18,7 @@ function InteractiveRatingComponent(props) {
     function toggleSetThanked(e) {
         e.preventDefault();
         console.log(`you're inside toggleSetThanked`)
-        if(!isThanked){
+        if(!isThanked && (parseInt(clickedRating) !== 0)){
             setThanked(true);
         } else {
             console.log(`You've already submitted a response! Reload the webpage to try again!`);
@@ -33,12 +32,10 @@ function InteractiveRatingComponent(props) {
                 <Rating toggleSetThanked={toggleSetThanked}
                     handleSetClickedRating={handleSetClickedRating}
                     clickedRating={clickedRating}/> :
-                <Thanked/>}
-                {clickedRating}
-            
+                <Thanked clickedRating={clickedRating}/>}
+
         </div>
     );
-
 }
 
 export default InteractiveRatingComponent;
