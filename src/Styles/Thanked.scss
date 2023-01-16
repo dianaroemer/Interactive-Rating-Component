@@ -1,10 +1,56 @@
 @use '_colors' as _colors;
 
-.ratingModal {
-    width: 350px;
+.thankModal {
+    margin-left: 7%;
+    width: 86%;
+    height: 362px;
     display: flex;
     justify-content: center;
-    background-color: _colors.$DarkBlue;
-    border-radius: 10px;
+    // background-color: _colors.$ModeratelyBlue;
+    background: radial-gradient(circle at top, #252C36 15%, #171E26 70%);
+    border-radius: 15px;
+    box-shadow: 1px 1px #1A1F25;
 }
 
+.thankContent {
+    padding: 22.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.thankLogo {
+    margin-top: 0;
+    transform: scale(.9);
+}
+
+.thankScoreBadge {
+    background-color: _colors.$DarkBlue;
+    color: _colors.$Orange;
+    height: 30px;
+    border-radius: 16px;
+    display: grid; 
+    place-content: center;
+    padding: .5rem;
+    padding-top: .15rem;
+    padding-bottom: .15rem;
+    font-size: .85rem;
+    letter-spacing: .03rem;
+    margin-bottom: 0;
+}
+
+.thankHeader {
+    color: _colors.$White;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+
+.thankParagraph {
+    color: _colors.$LightGrey;
+    font-size: .88rem;
+    // margin-right: 0;
+    line-height: 1.5;
+}
