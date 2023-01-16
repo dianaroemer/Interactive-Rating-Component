@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Styles/Rating.scss';
+import {ReactComponent as StarLogo} from '../images/icon-star.svg'
 
 function Rating(props) {
 
@@ -19,21 +20,33 @@ function Rating(props) {
     return(
         <div className='ratingModal'>
             <div className='ratingContent'>
-                How did we do?
 
-                Please let us know how we did with your support request. All feedback is appreciated 
-                to help us improve our offering!
+                <div className='starLogoContainer'>
+                    <StarLogo className='starLogo'/>    
+                </div>
 
-                {valueButtons}
+                
+                <p className='modalHeader'>
+                    How did we do?
+                </p>
+                
+                <p className='modalParagraph'>
+                    Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+                </p>
+
+                <div className='ratingButtonsContainer'>
+                    {valueButtons}
+                </div>
 
                 <button 
+                    className='submitButton'
                     onClick={(e) => {
                         // e.preventDefault();
                         // console.log("you clicked button");
                         console.log('you clicked button');
                         props.toggleSetThanked(e);
                     }}>
-                    Submit
+                    SUBMIT
                 </button>
             </div>
         </div>

@@ -93,6 +93,7 @@ I can see the above becoming a problem at scale - redrawing an array of five but
 Also, learned that `event.target.value` automatically types as a `string`. While multiple source recommend converting that to a number at function call time by instead running `event.target.valueAsNumber`, I was unable to find success with that method. Instead, simply running a `parseInt(event.target.value)` brought success and appropriately typed my incoming value as an Int, though it may be computationally more expensive than otherwise.
 
 
+Sneaky Radial-Gradient and 1px wide box-shadow on the bottom and right! These designs are really making you work for it, getting these colors right. I also feel like this is the second or third project in a row that has almost deliberately given all of the colors except for one (like the two in the color gradient background here).
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 

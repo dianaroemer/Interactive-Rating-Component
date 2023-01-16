@@ -2,30 +2,117 @@
 
 
 .ratingModal {
-    width: 415px;
-    height: 415px;
+    margin-left: 7%;
+    width: 86%;
+    height: 362px;
     display: flex;
     justify-content: center;
     // background-color: _colors.$ModeratelyBlue;
     background: radial-gradient(circle at top, #252C36 15%, #171E26 70%);
-    border-radius: 30px;
+    border-radius: 15px;
     box-shadow: 1px 1px #1A1F25;
 }
 
 .ratingContent {
-    padding: 20px;
+    padding: 22.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+}
+
+.starLogoContainer {
+    background-color: _colors.$DarkBlue;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    display: grid;
+    place-content: center;
+    margin-top: 2px;
+}
+
+.starLogo {
+    // height: 12px;
+    transform: scale(.77);
+}
+
+.modalHeader {
+    color: _colors.$White;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+
+.modalParagraph {
+    color: _colors.$LightGrey;
+    font-size: .88rem;
+    // margin-right: 0;
+    line-height: 1.5;
+}
+
+.ratingButtonsContainer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .valueButton {
     background-color: _colors.$DarkBlue;
     transition: .15s;
+    height: 42px;
+    width: 42px;
+    border-radius: 21px;
+    border: none;
+
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    color: _colors.$MediumGrey;
+
+    padding-top: 3px;
+
+
 }
 
 .valueButtonSelected {
+    height: 42px;
+    width: 42px;
+    border-radius: 21px;
+    border: none;
+
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
     background-color: _colors.$MediumGrey;
+    color: _colors.$White;
     transition: .15s;
+
 }
 
 .valueButton:hover{
     background-color: _colors.$Orange;
+}
+
+.submitButton {
+    margin-top: 1.5rem;
+    height: 42px;
+    border: none;
+    border-radius: 21px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    background-color: _colors.$Orange;
+    color: _colors.$White;
+    transition: .15s;
+    font-size: .8rem;
+    letter-spacing: 2px;
+
+    padding-top: 5px;
+}
+
+
+@media screen and (min-width: 427px ) {
+    .ratingModal{
+        width: 415px;
+        height: 415px;
+        margin-left: 0;
+    }
 }
