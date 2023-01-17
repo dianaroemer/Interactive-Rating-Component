@@ -112,4 +112,4 @@ Future goals for learning and developement are fairly straightforward.
 ## Author
 
 - Website - [Diana Roemer](https://github.com/dianaroemer)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/dominicroemer)
+- Frontend Mentor - [@dominicroemer](https://www.frontendmentor.io/profile/dominicroemer)
