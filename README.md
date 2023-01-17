@@ -100,7 +100,7 @@ I learned that using space-between when spacing different elements across a row 
 
 Future goals for learning and developement are fairly straightforward.
  - Continue practicing with Sass. When styling the ratingModal and the thankModal, I found that, despite ratingModal not importing Thanked.scss, making any changes to similarly named classes in a different component that isn't being rendered STILL rippled down through to project to modify the Rating Component, resulting in my renaming of my class system in the Thanked component from .ratingModal to .thankModal (among others, including .thankHeader, etc.). It seems like there should be a way for the .scss you're righting for a specific component to ONLY affect the component that uses it, while still sharing class names with a different component.
- - Practice using grid layout. I'm becoming fairly comfortable (as comfortable as I can be) with using Flexbox to position elements, but still feel woefully inadequate what using exclusively grid for placement and spacing.
+ - Practice using Grid layout in CSS. I'm becoming fairly comfortable (as comfortable as I can be) with using Flexbox to position elements, but still feel woefully inadequate when using exclusively Grid for placement and spacing.
  - I would like to start implementing Typescript into my projects. I feel comfortable enough with base-level React, from functional Components to class-based Components, that adding strict typing would make my data safer (or whatever it is that Typescript is supposed to do for me).
 
 ### Useful resources
