@@ -107,7 +107,6 @@ Future goals for learning and developement are fairly straightforward.
 
 - [devDocs.io](https://devdocs.io/) - Developer documentation for nearly everything I'm using, listed in one place and stored locally, so I don't have to google around to find the specific documentation relevant to whatever function I want to use (ex: does line-height use pixels or scale?)
 - [Pixlr](https://pixlr.com/) - Photoshop in a browser. Useful for checking specific sizes of elements, getting exact color palettes, etc.
-- [Pixlr](https://pixlr.com/) - Photoshop in a browser. Useful for checking specific sizes of elements, getting exact color palettes, etc.
 - [How to keep your Footer where it belongs?](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/) - A short FreeCodeCamp article about how to place a footer so that it goes where it's supposed to without ruining the rest of the document. While helpful, I still haven't quite resolved the `#content-wrap {padding-bottom: 1rem;} #footer Height` issue, in which including this line creates an additional bit of padding on the bottom the page which creates a vertical scroll bar in some environments, despite space being available for the footer. Still, quite helpful for understanding how to get better Footer placement.
 
 ## Author
