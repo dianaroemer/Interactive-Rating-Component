@@ -57,9 +57,61 @@
 
 
 @media screen and (min-width: 427px ) {
-    .ratingModal{
+    .thankModal{
         width: 415px;
         height: 415px;
         margin-left: 0;
+        border-radius: 2rem;
     }
+
+    .thankContent {
+        padding-left: 22.5px;
+        padding-right: 22.5px;
+        padding-top: 48px;
+        justify-content: space-between;
+    }
+
+    .thankLogo {
+        transform: scale(1);
+        // margin-bottom: 38px;
+        padding-right: 8px;
+        // padding-bottom: 20px;
+    }
+
+    .thankScoreBadge {
+        // margin-bottom: 8px;
+        // font-weight: 400;
+        font-size: .88rem;
+        height: 22px;
+        padding-top: 8px;
+        padding-right: 17px;
+        padding-left: 17px;
+        padding-bottom: 2px;
+        border-radius: 22px;
+        
+        // margin-top: 35px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .thankHeader {
+        margin-top: 7px;
+        margin-bottom: 7px;
+
+        font-size: 1.7rem;
+    }
+
+    .thankParagraph {
+        // margin: 0;
+        // margin-bottom: 0;
+        font-size: .95rem;
+        padding-right: 15px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        margin-top: 0;
+        // line-height: 1.6;
+        // padding-bottom: 10px;
+
+    }
+
 }
