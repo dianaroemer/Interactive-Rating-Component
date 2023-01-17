@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![The desktop ratings screen, with rating buttons 1-5](FEM starter components/design/my_screenshots/screen1.png?raw=true)
+![The desktop ratings screen, with rating buttons 1-5](/FEM starter components/design/my_screenshots/screen1.png?raw=true)
 ![The desktop thank you screen, showing which rating you selected and a calculator](https://raw.githubusercontent.com/dianaroemer/Interactive-Rating-Component/main/FEM%20starter%20components/design/my_screenshots/screen2.png)
 ![A mobile view of the ratings screen, with rating buttons laebeled 1-5](./FEM starter components/design/my_screenshots/screen3.png)
 
