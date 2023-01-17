@@ -29,11 +29,11 @@ Users should be able to:
 
 ### Screenshot
 
-Desktop Ratings Screen
+ - Desktop Ratings Screen
 ![The desktop ratings screen, with rating buttons 1-5](https://raw.githubusercontent.com/dianaroemer/Interactive-Rating-Component/main/FEM%20starter%20components/design/my_screenshots/screen1.png)
-Desktop Thank you Screen
+ - Desktop Thank you Screen
 ![The desktop thank you screen, showing which rating you selected and a calculator](https://raw.githubusercontent.com/dianaroemer/Interactive-Rating-Component/main/FEM%20starter%20components/design/my_screenshots/screen2.png)
-Mobile Ratings Screen
+ - Mobile Ratings Screen
 ![A mobile view of the ratings screen, with rating buttons laebeled 1-5](https://raw.githubusercontent.com/dianaroemer/Interactive-Rating-Component/main/FEM%20starter%20components/design/my_screenshots/screen3.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
