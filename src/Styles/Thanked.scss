@@ -54,3 +54,12 @@
     // margin-right: 0;
     line-height: 1.5;
 }
+
+
+@media screen and (min-width: 427px ) {
+    .ratingModal{
+        width: 415px;
+        height: 415px;
+        margin-left: 0;
+    }
+}
