@@ -36,14 +36,6 @@ Users should be able to:
  - Mobile Ratings Screen
 ![A mobile view of the ratings screen, with rating buttons laebeled 1-5](https://raw.githubusercontent.com/dianaroemer/Interactive-Rating-Component/main/FEM%20starter%20components/design/my_screenshots/screen3.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
 - [Solution URL: ](https://github.com/dianaroemer/Interactive-Rating-Component)
@@ -100,40 +92,23 @@ Also, learned that `event.target.value` automatically types as a `string`. While
 
 Sneaky Radial-Gradient and 1px wide box-shadow on the bottom and right! These designs are really making you work for it, getting these colors right. I also feel like this is the second or third project in a row that has almost deliberately given all of the colors except for one (like the two in the color gradient background here).
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-To see how you can add code snippets, see below:
+I learned that using space-between when spacing different elements across a row or column can be an enormous pain the butt when trying to match a pre-made design. When using flexbox to space elements, I've found in the pasts two projects, that it is much easier to anchor my elements to one specific location - for example, flexbox-end, start, or center. When spacing elements using space-around, space-between, and space-evenly, minor adjustments to one element's margin or padding have ripple effects that apply across ALL of the remaining elements, as the spacing is calculated for all of them based on the space available. In that way, it seems like a better idea to anchor to one end of the flexbox, and space one item at a time to match the given design pattern, so that a minor modification to one single element ONLY EFFECTS SUBSEQUENT ELEMENTS and not the ENTIRE list of elements. 
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Future goals for learning and developement are fairly straightforward.
+ - Continue practicing with Sass. When styling the ratingModal and the thankModal, I found that, despite ratingModal not importing Thanked.scss, making any changes to similarly named classes in a different component that isn't being rendered STILL rippled down through to project to modify the Rating Component, resulting in my renaming of my class system in the Thanked component from .ratingModal to .thankModal (among others, including .thankHeader, etc.). It seems like there should be a way for the .scss you're righting for a specific component to ONLY affect the component that uses it, while still sharing class names with a different component.
+ - Practice using grid layout. I'm becoming fairly comfortable (as comfortable as I can be) with using Flexbox to positioning elements, but still feel woefully inadequate what using exclusively grid for placement and spacing.
+ - I would like to start implementing Typescript into my projects. I feel comfortable enough with base-level React, from functional Components to class-based Components, that adding strict typing would make my data safer (or whatever it is that Typescript is supposed to do for me).
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [devDocs.io](https://devdocs.io/) - Developer documentation for nearly everything I'm using, listed in one place and stored locally, so I don't have to google around to find the specific documentation relevant to whatever function I want to use (ex: does line-height use pixels or scale?)
+- [Pixlr](https://pixlr.com/) - Photoshop in a browser. Useful for checking specific sizes of elements, getting exact color palettes, etc.
+- [Pixlr](https://pixlr.com/) - Photoshop in a browser. Useful for checking specific sizes of elements, getting exact color palettes, etc.
+- [How to keep your Footer where it belongs?](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/) - A short FreeCodeCamp article about how to place a footer so that it goes where it's supposed to without ruining the rest of the document. While helpful, I still haven't quite resolved the `#content-wrap {padding-bottom: 1rem;} #footer Height` issue, in which including this line creates an additional bit of padding on the bottom the page which creates a vertical scroll bar in some environments, despite space being available for the footer. Still, quite helpful for understanding how to get better Footer placement.
 
 ## Author
 
